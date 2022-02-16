@@ -148,7 +148,7 @@ $main-font-family: 'Open Sans', sans-serif;
 
 // Main SASS Code 
 body{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     @include flex-box(column, center, center);
 
     header{
@@ -208,10 +208,10 @@ body{
     main{
         @include flex-box(column, center, center);
         padding: 150px 100px 100px 100px;
+        width: 100%;
         section{
             @include flex-box(row, space-between, center);
-            width: 1280px;
-            height: 450px;
+            width: 98%;    
             border-radius: 20px;
             margin: 20px;
             box-shadow: 0px 0px 20px  lightgray;
@@ -265,32 +265,23 @@ body{
         }
         .community{
             @include flex-box(column, center, center);
-            width: 850px;
+            width: 60%;
             height: auto;
-            z-index: 1;
             padding: 70px 50px 20px 50px;   
             h3{  
                 font-family: $header-font-family;
                 /* border: 1px solid black; */
-                font-size: 35px;
+                font-size: 33px;
             }
             a{
                 button{
                     @extend .read;
-                    margin: 30px;
+                    margin: 35px 0px 35px 0px;
                     span{
                         opacity: 0.9;
                     }
                 }
             }
-        }
-    }
-    footer{
-        width: 100%;
-        background: $footer-bg-color;
-        .contact{
-            padding: 100px 10px 10px 10px;
-            @include flex-box(row, space-around, center );
         }
     }
 }
