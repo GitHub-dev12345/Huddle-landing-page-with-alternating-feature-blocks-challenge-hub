@@ -102,14 +102,15 @@ $main-font-family: 'Open Sans', sans-serif;
 // Extend Button Design 
 
 .try{
-    padding: 12px 65px 12px 65px;
+    padding: 14px 65px 14px 65px;
     background: white;
     color: black;
     text-align: center;
     font-weight: 600;
+    font-size: 1vw;
     font-family: $header-font-family;
-    font-weight: bold;
-    outline: none;
+    font-weight: bolder;
+    outline: none;  
     border: transparent;
     box-shadow:  0px 5px 5px rgba(0,0,0,0.5);
     border-radius: 100px;
@@ -117,13 +118,13 @@ $main-font-family: 'Open Sans', sans-serif;
 }
 
 .getStarted{
-    padding: 19px 75px 19px 75px;
+    padding: 18px 75px 18px 75px;
     background: $primary-color;
     color: hsl(193, 100%, 96%);
     font-weight: 400;
     font-family: $main-font-family;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.95vw;
     text-align: center;
     border-radius: 100px;
     outline: none;
@@ -132,13 +133,13 @@ $main-font-family: 'Open Sans', sans-serif;
 }
 
 .read{
-    padding: 25px 100px 25px 100px;
+    padding: 26px 102px 26px 102px;
     background: $primary-color;
-    color: hsl(193, 100%, 96%);
+    color: white;
     font-weight: 400;
     font-family: $main-font-family;
     font-weight: bold;
-    font-size: 20px;;
+    font-size: 1.35vw;
     text-align: center;
     border-radius: 100px;
     outline: none;
@@ -147,23 +148,19 @@ $main-font-family: 'Open Sans', sans-serif;
 }
 
 // Main SASS Code 
-body{
-    /* border: 1px solid black; */
+body {
     @include flex-box(column, center, center);
-
-    header{
-        width: 100%;
-        background: url("/images/bg-hero-desktop.svg") no-repeat $head-bg-color;
-        background-position: center top;
-        background-size: 100%;
-        padding: 30px 10px 70px 15px;
+    header {
         @include flex-box(column, center, center);
+        width: 100%;
+        background: url('../images/bg-hero-desktop.svg') no-repeat $head-bg-color;
+        background-size: 100%;
+        padding: 0px 0px 70px 0px;
 
         .head{
+            width: 100%; 
+            padding: 50px 80px 20px 80px;  
             @include flex-box(row, space-between, center);
-            width: 100%;
-            padding: 25px 60px 70px 70px;
-
             a{
                 button{
                     @extend .try;
@@ -171,119 +168,119 @@ body{
             }
         }
         .about{
-            width: 100%;
-            padding: 0px 0px 0px 0px;
             @include flex-box(row, space-around, center);
-
+            width: 100%;
             .info{
-                padding: 5px 0px 5px 25px; 
-                margin-top: 15px; 
+                width: 600px;
+                height: auto;
+                margin: 50px 0px 0px 80px;
                 h2{
                     font-family: $header-font-family;
-                    font-size: 2.65rem;
+                    font-size: 2.75vw;
                 }
                 p{
+                    font-size: 1.25vw;
                     font-family: $main-font-family;
-                    font-size: 20px;
-                    font-weight: normal;
-                    word-spacing: -2.5px;
                     margin: 0px 0px 10px 0px;
-                    color:hsl(192, 100%, 9%);
                 }
                 a{
                     button{
                         @extend .getStarted;
-                        span{
-                            opacity: 0.9;
-                        }
                     }
                 }
             }
             .companyLogo{
-                padding: 0px 40px 0px 0px;
-                width: 51%;
+                width: 725px;
+                height: auto;
+                margin: 50px 80px 0px 0px;
+                img{
+                    width: 100%;
+                }
             }
         }
     }
     main{
         @include flex-box(column, center, center);
-        padding: 150px 100px 100px 100px;
         width: 100%;
+        padding: 140px 95px 180px 95px;
+        border: 1px solid black;
+
         section{
             @include flex-box(row, space-between, center);
-            width: 98%;    
+            width: 97.50%;
             border-radius: 20px;
-            margin: 20px;
-            box-shadow: 0px 0px 20px  lightgray;
+            padding: 55px 35px 50px 35px;
             border: transparent;
-
+            outline: none;
+            margin: 20px;
+            box-shadow: 0px 0px 10px lightgray;
             div{
-                /* border: 1px solid black; */
-                width: 500px;
+                width: 550px;
                 height: auto;
-                margin: 20px 0px 20px 120px;
+                margin: 50px 0px 50px 90px;
+                
                 h3{
+                    font-size: 1.89vw;
                     font-family: $header-font-family;
-                    font-size: 30px;
+                    opacity: 0.7;
                 }
                 p{
+                    font-size: 1.20vw;
                     font-family: $main-font-family;
                     color: $text-color;
-                    font-size: 18px;
-                    margin: 10px 0px 0px 0px;
+                    margin: 15px 0px 0px 0px;
+                }  
+            }
+            .imgGrow{ 
+                width: 450px;
+                height: auto;
+                margin: 0px;
+
+                img{
+                    width: 100%;
                 }
-            }
-            .imgGrow{
-                padding: 35px;
-            }
+            }       
         }
-
-        .flowing{
+        #flowing{
+            padding: 15px 0px 15px 35px;
             @include flex-box(row-reverse, space-between, center);
-            padding: 15px 0px 15px 0px;
-
             .flow{
-                /* border: 1px solid black; */
-                margin: 25px 35px 20px 20px;
-            }   
-
+                margin: 0px -10px 0px 0px;
+            }
             .imgFlow{
-                /* border: 1px solid black; */
-                padding: 35px;
-                margin-left: 100px;
+                margin: 50px 0px 50px 90px;
+                width: 450px;
+                height: auto;
             }
         }
-        .users{
+        #users{
+            padding: 60px 25px 60px 45px;
             @include flex-box(row, space-between, center);
-            padding: 15px 0px 15px 0px;
             .User{
-                margin: 20px 0px 20px 120px;
+                margin: 50px 0px 50px 90px;
             }
             .imgUsers{
-                padding: 35px;
+                width: 450px;
+                height: auto;
+                margin: 0px;
             }
         }
-        .community{
+        #community{
             @include flex-box(column, center, center);
-            width: 60%;
-            height: auto;
-            padding: 70px 50px 20px 50px;   
-            h3{  
+            padding: 70px 70px 50px 70px;
+            width: 63%;
+            position: relative;
+            top: 120px;
+            h3{
                 font-family: $header-font-family;
-                /* border: 1px solid black; */
-                font-size: 33px;
+                font-size: 2.2vw;
             }
             a{
+                margin: 35px 0px 0px 0px;
                 button{
                     @extend .read;
-                    margin: 35px 0px 35px 0px;
-                    span{
-                        opacity: 0.9;
-                    }
                 }
             }
         }
     }
 }
-
-
