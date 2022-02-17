@@ -98,6 +98,18 @@ $main-font-family: 'Open Sans', sans-serif;
     align-items: $al;
 }
 
+// Common Code para mixing
+@mixin para {
+    font-family: $main-font-family;
+    color: $head-bg-color;  
+    font-size: 1.09vw;
+}
+
+// achor tag margin & padding mixing
+@mixin marPad {
+    padding: 10px;
+    margin: 0px 10px 0px 15px; 
+}
 
 // Extend Button Design 
 
@@ -203,7 +215,7 @@ body {
         @include flex-box(column, center, center);
         width: 100%;
         padding: 140px 95px 180px 95px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
 
         section{
             @include flex-box(row, space-between, center);
@@ -268,9 +280,10 @@ body {
         #community{
             @include flex-box(column, center, center);
             padding: 70px 70px 50px 70px;
+            margin: 150px 0px -280px 0px;
+            background: white;
+            z-index: 1;
             width: 63%;
-            position: relative;
-            top: 120px;
             h3{
                 font-family: $header-font-family;
                 font-size: 2.2vw;
@@ -281,6 +294,110 @@ body {
                     @extend .read;
                 }
             }
+        }
+    }
+    footer{ 
+        @include flex-box(column, center, center);
+        background: $footer-bg-color;
+        width: 100%;
+
+        .contact{
+            @include flex-box(row, space-between, center);
+            width: 100%;
+            height: auto;
+            padding: 110px 110px 110px 110px;
+            margin: 85px 0px 0px 0px;
+            /* border: 1px solid red; */
+
+            #details{
+                /* border: 1px solid red; */
+                margin: 0px 0px 0px 0px;
+                h1{
+                    padding: 10px;
+                    margin: 0px 0px 0px 20px;
+                    img{
+                        filter:  brightness(0) invert(1);
+                        width: 60%;
+                    }
+                }
+                .location{
+                    @include flex-box(row, center, center);
+                    padding: 15px 15px 0px 15px;
+                    margin: 15px;
+                    a{
+                        padding: 10px;
+                        margin: 0px 15px 0px -10px;
+                        align-self: flex-start;
+                    }
+                    p{
+                        @include para;
+                    }
+                }
+                .Contact-us{
+                    @include flex-box(row,flex-start,center);
+                    padding: 7px;
+                    
+                    a{
+                        padding: 10px;
+                        margin: 0px 10px 0px 15px;
+                    }
+                    p{
+                        @include para;
+                    }
+                }
+                .mail{
+                    @include flex-box(row, flex-start, center);
+                    padding: 7px;
+                    a{
+                        @include marPad; 
+                    }
+                    p{
+                        @include para;
+                    }
+                }
+            }
+            #links{
+                @include flex-box(row, center, center);
+                /* border: 1px solid red; */
+                margin: 0px 0px 0px 100px;
+                .link-1{
+                    @include flex-box(column, center, center);
+                    /* border: 1px solid red; */
+                    margin: -1px 20px 0px 0px;
+                    a{
+                        /* border: 1px solid red; */
+                        width: 100%;
+                        padding: 15px 100px 0px 0px;
+                        font-family: $main-font-family;
+                        text-decoration: none;
+                        font-size: 1.2vw;
+                        color: $head-bg-color; 
+                    }
+                }
+            }
+            #social{
+                @include flex-box(row, center,center);
+                /* border: 1px solid red; */
+                margin: -70px 140px 0px 0px;
+                a{
+                    padding: 5px;
+                    img{
+                        filter:  brightness(0) invert(1);
+                        width: 30px;
+                    }
+                }
+            }
+        }
+        #copyright{
+            position: relative;
+            @include flex-box(row, flex-end, center);
+            align-self: flex-end;
+            color: $head-bg-color;
+            font-family: $main-font-family;
+            font-size: 0.85vw;
+            /* border: 1px solid red; */
+            top: -70px;
+            right: 80px;
         }
     }
 }

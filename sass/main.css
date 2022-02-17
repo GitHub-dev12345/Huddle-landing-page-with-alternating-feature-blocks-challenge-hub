@@ -241,7 +241,7 @@ body main {
           align-items: center;
   width: 100%;
   padding: 140px 95px 180px 95px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 body main section {
@@ -366,9 +366,10 @@ body main #community {
       -ms-flex-align: center;
           align-items: center;
   padding: 70px 70px 50px 70px;
+  margin: 150px 0px -280px 0px;
+  background: white;
+  z-index: 1;
   width: 63%;
-  position: relative;
-  top: 120px;
 }
 
 body main #community h3 {
@@ -378,5 +379,246 @@ body main #community h3 {
 
 body main #community a {
   margin: 35px 0px 0px 0px;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #00252e;
+  width: 100%;
+}
+
+body footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 110px 110px 110px 110px;
+  margin: 85px 0px 0px 0px;
+  /* border: 1px solid red; */
+}
+
+body footer .contact #details {
+  /* border: 1px solid red; */
+  margin: 0px 0px 0px 0px;
+}
+
+body footer .contact #details h1 {
+  padding: 10px;
+  margin: 0px 0px 0px 20px;
+}
+
+body footer .contact #details h1 img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 60%;
+}
+
+body footer .contact #details .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px 0px 15px;
+  margin: 15px;
+}
+
+body footer .contact #details .location a {
+  padding: 10px;
+  margin: 0px 15px 0px -10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+body footer .contact #details .location p {
+  font-family: "Open Sans", sans-serif;
+  color: #ebfbff;
+  font-size: 1.09vw;
+}
+
+body footer .contact #details .Contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px;
+}
+
+body footer .contact #details .Contact-us a {
+  padding: 10px;
+  margin: 0px 10px 0px 15px;
+}
+
+body footer .contact #details .Contact-us p {
+  font-family: "Open Sans", sans-serif;
+  color: #ebfbff;
+  font-size: 1.09vw;
+}
+
+body footer .contact #details .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px;
+}
+
+body footer .contact #details .mail a {
+  padding: 10px;
+  margin: 0px 10px 0px 15px;
+}
+
+body footer .contact #details .mail p {
+  font-family: "Open Sans", sans-serif;
+  color: #ebfbff;
+  font-size: 1.09vw;
+}
+
+body footer .contact #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* border: 1px solid red; */
+  margin: 0px 0px 0px 100px;
+}
+
+body footer .contact #links .link-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* border: 1px solid red; */
+  margin: -1px 20px 0px 0px;
+}
+
+body footer .contact #links .link-1 a {
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 15px 100px 0px 0px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: #ebfbff;
+}
+
+body footer .contact #social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* border: 1px solid red; */
+  margin: -70px 140px 0px 0px;
+}
+
+body footer .contact #social a {
+  padding: 5px;
+}
+
+body footer .contact #social a img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 30px;
+}
+
+body footer #copyright {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #ebfbff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85vw;
+  /* border: 1px solid red; */
+  top: -70px;
+  right: 80px;
 }
 /*# sourceMappingURL=main.css.map */
