@@ -170,12 +170,10 @@ body {
         background: url('../images/bg-hero-desktop.svg') no-repeat $head-bg-color;
         background-size: 100%;
         padding: 0px 0px 80px 0px;
-        /* border: 1px solid black; */
 
         .head{
             width: 100%; 
             padding: 50px 80px 20px 80px;  
-            /* border: 1px solid black; */
             @include flex-box(row, space-between, center);
             a{
                 button{
@@ -184,11 +182,9 @@ body {
             }
         }
         .about{
-            /* border: 1px solid black; */
             @include flex-box(row, space-around, center);
             width: 100%;
             .info{
-                /* border: 1px solid black; */
                 width: 600px;
                 height: auto;
                 margin: 65px 0px 0px 80px;
@@ -208,7 +204,6 @@ body {
                 }
             }
             .companyLogo{
-                /* border: 1px solid black; */
                 width: 725px;
                 height: auto;
                 margin: 50px 80px 0px 0px;
@@ -222,20 +217,17 @@ body {
         @include flex-box(column, center, center);
         width: 100%;
         padding: 140px 95px 180px 95px;
-        /* border: 1px solid black; */
 
         section{
-            /* border: 1px solid black; */
             @include flex-box(row, space-between, center);
             width: 100%;
-            border-radius: 20px;
+            border-radius: 15px;
             padding: 55px 35px 50px 35px;
             border: transparent;
             outline: none;
             margin: 20px;
             box-shadow: 0px 0px 10px lightgray;
             div{
-                /* border: 1px solid black; */
                 width: 550px;
                 height: auto;
                 margin: 50px 0px 50px 90px;
@@ -253,7 +245,6 @@ body {
                 }  
             }
             .imgGrow{ 
-                /* border: 1px solid black; */
                 width: 450px;
                 height: auto;
                 margin: 0px;
@@ -270,7 +261,6 @@ body {
                 margin: 0px -10px 0px 0px;
             }
             .imgFlow{
-                /* border: 1px solid black; */
                 margin: 50px 0px 50px 90px;
                 width: 450px;
                 height: auto;
@@ -283,7 +273,6 @@ body {
                 margin: 50px 0px 50px 90px;
             }
             .imgUsers{
-                /* border: 1px solid black; */
                 width: 450px;
                 height: auto;
                 margin: 0px;
@@ -320,11 +309,9 @@ body {
             height: auto;
             padding: 110px 110px 110px 110px;
             margin: 85px 0px 0px 0px;
-            /* border: 1px solid red; */
 
             #details{
                 margin: 0px 0px 0px 0px;
-                /* border: 1px solid red; */
                 h1{
                     padding: 10px;
                     margin: 0px 0px 0px 20px;
@@ -348,7 +335,6 @@ body {
                 }
                 .Contact-us{
                     @include flex-box(row,flex-start,center);
-                    /* border: 1px solid red; */
                     padding: 7px;
                     
                     a{
@@ -372,13 +358,11 @@ body {
             }
             #links{
                 @include flex-box(row, center, center);
-                /* border: 1px solid red; */
                 margin: 0px 0px 0px 100px;
                 .link-1{
                     @include flex-box(column, center, center);
                     margin: -1px 20px 0px 0px;
                     a{
-                        /* border: 1px solid red; */
                         width: 100%;
                         padding: 15px 100px 0px 0px;
                         font-family: $main-font-family;
@@ -390,7 +374,6 @@ body {
             }
             #social{
                 @include flex-box(row, center,center);
-                /* border: 1px solid red; */
                 margin: -70px 140px 0px 0px;
                 a{
                     padding: 5px;
@@ -408,19 +391,18 @@ body {
             color: $head-bg-color;
             font-family: $main-font-family;
             font-size: 13px;
-            /* border: 1px solid red; */
             top: -70px;
             right: 80px;
         }
     }
 }
 
-// Responsive SASS Code
-@media all and (max-width: 1170px) {
+// Responsive SASS Code 1270px
+@media all and (max-width: 1270px) {
     body {
         header{
             .head{
-                padding: 50px 25px 20px 25px; 
+                padding: 50px 25px 20px 25px;
             }
             .about{
                 @include flex-box(column, center, center);
@@ -496,13 +478,11 @@ body {
             #community{
                 width: 100%;
                 h3{
-                    /* border: 1px solid black; */
                     width: 100%;
                 }
                 a{
                     @include flex-box(column, center, center);
                     text-decoration: none;
-                    /* border: 1px solid black; */
                     width: 100%;
                 }
             }
@@ -533,12 +513,197 @@ body {
                 #social{
                     @include flex-box(row,flex-end, flex-end);
                     width: 100%;
-                    margin: 0px 0px 0px 0px;
+                    margin: 40px 0px 0px 0px;
                     a{
                         position: relative;
-                        right: 160px;
-                        top: 30px;
-                        img{
+                        right: 140px;
+                        top: 25px;
+                    }
+                }
+            }
+            #copyright{
+                margin: 0px -30px 0px 0px;   
+            }
+        }
+    }
+}
+
+// Responsive SASS Code 625px
+@media all and (max-width: 625px) {
+    body{
+        header{
+            background: url(../images/bg-hero-mobile.svg) no-repeat $head-bg-color;
+            background-size: 100%;
+            padding-bottom: 0px;
+            .head{
+                padding-top: 30px;
+                h1{
+                    img{
+                        width: 50%;
+                    }
+                }
+                a{
+                    button{
+                        padding: 5px 30px 5px 30px;
+                    }
+                }
+            }
+            .about{
+                .info{
+                    h2{
+                        font-size: 7vw;
+                    }
+                    p{
+                        font-size: 4.1vw;
+                        br{
+                            display: none;
+                        }   
+                    }
+                    a{
+                        button{
+                            font-size: 3.7vw;
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            section{
+                div{
+                    margin: 0px 90px 0px 90px;
+                }
+                p{
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive SASS Code 600px
+@media all and (max-width: 600px) {
+    body {
+        header{
+        }
+        main{
+            section{
+            }
+            #community{
+                h3{
+                    width: 130%;
+                    font-size: 4.7vw;
+                }
+                a{
+                    button{
+                        padding: 20px 70px 20px 70px;       
+                        font-size: 2.8vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Finally Responsive SASS Code ( 375px )
+@media all and (max-width: 431px) {
+    body{
+        header{
+            .head{
+                a{
+                    button{
+                        padding: 8px 15px 8px 15px;
+                        font-size: 3vw;
+                    }
+                }
+            }
+            .about{
+                .info{
+                    margin: 0px 0px 0px 0px;
+                    a{
+                        button{
+                            font-size: 3.5vw;
+                            padding: 14px 60px 14px 60px;
+                        }
+                    }
+                }
+            }
+            .companyLogo{
+                img{
+                    margin: -35px 0px 0px 0px;
+                }
+            }
+            
+        }
+        main{
+            padding: 20px 25px 20px 25px;
+            section{
+                padding: 0px 35px 25px 35px;
+                margin: 20px;
+                div{
+                    h3{
+                        font-size: 5vw;
+                    }
+                    P{
+                        font-size: 3.7vw;
+                    }
+                }
+            }
+            #flowing{
+                padding: 0px 35px 40px 35px;
+                .flow{
+                    margin: 0px 90px 0px 90px;
+                    h3{
+                        font-size: 5vw;
+                    }
+                    P{
+                        font-size: 3.7vw;
+                    }       
+                }
+            }
+            #users{
+                padding: 0px 35px 25px 35px;
+                .User{
+                    margin: 0px 90px 0px 90px;
+                    h3{
+                        font-size: 5vw;
+                    }
+                    P{
+                        font-size: 3.9vw;
+                    }
+                }
+            }
+            #community{
+                padding: 30px 70px 30px 70px;
+                margin: 80px 0px -80px 0px;
+                h3{
+                    width: 170%;
+                    font-size: 4.7vw;
+                }
+                a{
+                    margin: 17px 0px 0px 0px;
+                    button{
+                        font-size: 2.61vw;
+                        padding: 15px 40px 15px 40px;
+                    }
+                }
+            }
+        }
+        footer{
+            .contact{
+                margin: -80px 0px 0px 0px;
+                #details{
+                    .location{
+                        a{
+                            img{
+                                width: 50px;
+                            }
+                        }
+                        p{
+                            br{
+                                display: none;
+                            }
                         }
                     }
                 }

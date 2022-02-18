@@ -164,13 +164,11 @@ body header {
   background: url("../images/bg-hero-desktop.svg") no-repeat #ebfbff;
   background-size: 100%;
   padding: 0px 0px 80px 0px;
-  /* border: 1px solid black; */
 }
 
 body header .head {
   width: 100%;
   padding: 50px 80px 20px 80px;
-  /* border: 1px solid black; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,7 +185,6 @@ body header .head {
 }
 
 body header .about {
-  /* border: 1px solid black; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,7 +201,6 @@ body header .about {
 }
 
 body header .about .info {
-  /* border: 1px solid black; */
   width: 600px;
   height: auto;
   margin: 65px 0px 0px 80px;
@@ -222,7 +218,6 @@ body header .about .info p {
 }
 
 body header .about .companyLogo {
-  /* border: 1px solid black; */
   width: 725px;
   height: auto;
   margin: 50px 80px 0px 0px;
@@ -248,11 +243,9 @@ body main {
           align-items: center;
   width: 100%;
   padding: 140px 95px 180px 95px;
-  /* border: 1px solid black; */
 }
 
 body main section {
-  /* border: 1px solid black; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,7 +260,7 @@ body main section {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 55px 35px 50px 35px;
   border: transparent;
   outline: none;
@@ -277,7 +270,6 @@ body main section {
 }
 
 body main section div {
-  /* border: 1px solid black; */
   width: 550px;
   height: auto;
   margin: 50px 0px 50px 90px;
@@ -297,7 +289,6 @@ body main section div p {
 }
 
 body main section .imgGrow {
-  /* border: 1px solid black; */
   width: 450px;
   height: auto;
   margin: 0px;
@@ -329,7 +320,6 @@ body main #flowing .flow {
 }
 
 body main #flowing .imgFlow {
-  /* border: 1px solid black; */
   margin: 50px 0px 50px 90px;
   width: 450px;
   height: auto;
@@ -357,7 +347,6 @@ body main #users .User {
 }
 
 body main #users .imgUsers {
-  /* border: 1px solid black; */
   width: 450px;
   height: auto;
   margin: 0px;
@@ -430,12 +419,10 @@ body footer .contact {
   height: auto;
   padding: 110px 110px 110px 110px;
   margin: 85px 0px 0px 0px;
-  /* border: 1px solid red; */
 }
 
 body footer .contact #details {
   margin: 0px 0px 0px 0px;
-  /* border: 1px solid red; */
 }
 
 body footer .contact #details h1 {
@@ -494,7 +481,6 @@ body footer .contact #details .Contact-us {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* border: 1px solid red; */
   padding: 7px;
 }
 
@@ -551,7 +537,6 @@ body footer .contact #links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* border: 1px solid red; */
   margin: 0px 0px 0px 100px;
 }
 
@@ -573,7 +558,6 @@ body footer .contact #links .link-1 {
 }
 
 body footer .contact #links .link-1 a {
-  /* border: 1px solid red; */
   width: 100%;
   padding: 15px 100px 0px 0px;
   font-family: "Open Sans", sans-serif;
@@ -596,7 +580,6 @@ body footer .contact #social {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* border: 1px solid red; */
   margin: -70px 140px 0px 0px;
 }
 
@@ -630,12 +613,11 @@ body footer #copyright {
   color: #ebfbff;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  /* border: 1px solid red; */
   top: -70px;
   right: 80px;
 }
 
-@media all and (max-width: 1170px) {
+@media all and (max-width: 1270px) {
   body header .head {
     padding: 50px 25px 20px 25px;
   }
@@ -778,7 +760,6 @@ body footer #copyright {
     width: 100%;
   }
   body main #community h3 {
-    /* border: 1px solid black; */
     width: 100%;
   }
   body main #community a {
@@ -796,7 +777,6 @@ body footer #copyright {
         -ms-flex-align: center;
             align-items: center;
     text-decoration: none;
-    /* border: 1px solid black; */
     width: 100%;
   }
   body footer .contact {
@@ -852,12 +832,141 @@ body footer #copyright {
         -ms-flex-align: end;
             align-items: flex-end;
     width: 100%;
-    margin: 0px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
   }
   body footer .contact #social a {
     position: relative;
-    right: 160px;
-    top: 30px;
+    right: 140px;
+    top: 25px;
+  }
+  body footer #copyright {
+    margin: 0px -30px 0px 0px;
+  }
+}
+
+@media all and (max-width: 625px) {
+  body header {
+    background: url(../images/bg-hero-mobile.svg) no-repeat #ebfbff;
+    background-size: 100%;
+    padding-bottom: 0px;
+  }
+  body header .head {
+    padding-top: 30px;
+  }
+  body header .head h1 img {
+    width: 50%;
+  }
+  body header .head a button {
+    padding: 5px 30px 5px 30px;
+  }
+  body header .about .info h2 {
+    font-size: 7vw;
+  }
+  body header .about .info p {
+    font-size: 4.1vw;
+  }
+  body header .about .info p br {
+    display: none;
+  }
+  body header .about .info a button {
+    font-size: 3.7vw;
+  }
+  body main section div {
+    /* border: 1px solid black; */
+    margin: 0px 90px 0px 90px;
+  }
+  body main section p br {
+    display: none;
+  }
+}
+
+@media all and (max-width: 600px) {
+  body main #community h3 {
+    /* border: 1px solid black; */
+    width: 130%;
+    font-size: 4.7vw;
+  }
+  body main #community a button {
+    padding: 20px 70px 20px 70px;
+    font-size: 2.8vw;
+  }
+}
+
+@media all and (max-width: 431px) {
+  body header .head a button {
+    padding: 8px 15px 8px 15px;
+    font-size: 3vw;
+  }
+  body header .about .info {
+    margin: 0px 0px 0px 0px;
+  }
+  body header .about .info a button {
+    font-size: 3.5vw;
+    padding: 14px 60px 14px 60px;
+  }
+  body header .companyLogo img {
+    margin: -35px 0px 0px 0px;
+  }
+  body main {
+    padding: 20px 25px 20px 25px;
+  }
+  body main section {
+    padding: 0px 35px 25px 35px;
+    margin: 20px;
+  }
+  body main section div h3 {
+    font-size: 5vw;
+  }
+  body main section div P {
+    font-size: 3.7vw;
+  }
+  body main #flowing {
+    padding: 0px 35px 40px 35px;
+  }
+  body main #flowing .flow {
+    margin: 0px 90px 0px 90px;
+  }
+  body main #flowing .flow h3 {
+    font-size: 5vw;
+  }
+  body main #flowing .flow P {
+    font-size: 3.7vw;
+  }
+  body main #users {
+    padding: 0px 35px 25px 35px;
+  }
+  body main #users .User {
+    margin: 0px 90px 0px 90px;
+  }
+  body main #users .User h3 {
+    font-size: 5vw;
+  }
+  body main #users .User P {
+    font-size: 3.9vw;
+  }
+  body main #community {
+    padding: 30px 70px 30px 70px;
+    margin: 80px 0px -80px 0px;
+  }
+  body main #community h3 {
+    width: 170%;
+    font-size: 4.7vw;
+  }
+  body main #community a {
+    margin: 17px 0px 0px 0px;
+  }
+  body main #community a button {
+    font-size: 2.61vw;
+    padding: 15px 40px 15px 40px;
+  }
+  body footer .contact {
+    margin: -80px 0px 0px 0px;
+  }
+  body footer .contact #details .location a img {
+    width: 50px;
+  }
+  body footer .contact #details .location p br {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
