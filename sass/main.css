@@ -347,9 +347,9 @@ body main #users .User {
 }
 
 body main #users .imgUsers {
+  margin: 50px 0px 50px 90px;
   width: 450px;
   height: auto;
-  margin: 0px;
 }
 
 body main #community {
@@ -872,7 +872,6 @@ body footer #copyright {
     font-size: 3.7vw;
   }
   body main section div {
-    /* border: 1px solid black; */
     margin: 0px 90px 0px 90px;
   }
   body main section p br {
@@ -882,7 +881,6 @@ body footer #copyright {
 
 @media all and (max-width: 600px) {
   body main #community h3 {
-    /* border: 1px solid black; */
     width: 130%;
     font-size: 4.7vw;
   }

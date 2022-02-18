@@ -1,0 +1,48 @@
+// Extend Button Design 
+.try{
+    padding: 14px 65px 14px 65px;
+    background: white;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: $header-font-family;
+    font-weight: bolder;
+    outline: none;  
+    border: transparent;
+    box-shadow:  0px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 100px;
+    box-shadow: 0px 2px 10px lightgray;
+}
+
+.getStarted{
+    padding: 18px 75px 18px 75px;
+    background: $primary-color;
+    color: hsl(193, 100%, 96%);
+    font-weight: 400;
+    font-family: $main-font-family;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 100px;
+    word-spacing: 2px;
+    outline: none;
+    border: transparent;
+    box-shadow: 0px 0px 20px  lightgray;
+}
+
+.read{
+    padding: 26px 102px 26px 102px;
+    background: $primary-color;
+    color: white;
+    font-weight: 400;
+    font-family: $main-font-family;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 100px;
+    word-spacing: 2px;
+    outline: none;
+    border: transparent;
+    box-shadow: 0px 0px 20px  lightgray;
+}

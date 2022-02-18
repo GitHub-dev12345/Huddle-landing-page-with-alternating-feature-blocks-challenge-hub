@@ -1,0 +1,35 @@
+// Sass Mixing 
+@mixin flex-box($fd, $jc, $al) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $al;
+}
+
+// Common Code para mixing
+@mixin para {
+    font-family: $main-font-family;
+    color: $head-bg-color;  
+    font-size: 16.50px;
+}
+
+@mixin widMar {
+    margin: 50px 0px 50px 90px;
+    width: 450px;
+    height: auto;
+}
+
+@mixin widMar2 {
+    width: 100%;
+    margin: 50px 90px 50px 90px;
+}
+
+@mixin sectionCode {
+    @include flex-box(column-reverse, center, center);
+    padding: 55px 35px 50px 35px;
+}
+// achor tag margin & padding mixing
+@mixin marPad {
+    padding: 10px;
+    margin: 0px 10px 0px 15px; 
+}
