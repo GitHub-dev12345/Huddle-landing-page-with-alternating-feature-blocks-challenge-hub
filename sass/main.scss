@@ -24,12 +24,16 @@ body {
             width: 100%; 
             padding: 50px 80px 20px 80px;  
             @include flex-box(row, space-between, center);
+            h1{
+                width: 85%;
+            }
             a{
-                &:hover{
-                    opacity: 0.5;
-                }
                 button{
                     @extend .try;
+
+                    &:hover{
+                        opacity: 0.5;
+                    }
                 }
             }
         }
@@ -50,11 +54,12 @@ body {
                     margin: 0px 0px 10px 0px;
                 }
                 a{
-                    &:hover{
-                        opacity: 0.5;
-                    }
                     button{
                         @extend .getStarted;
+
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
             }
@@ -144,13 +149,13 @@ body {
             a{
                 margin: 35px 0px 0px 0px;
 
-                &:hover{
-                    opacity: 0.5;
-                    fill: pink;
-                }
-
                 button{
                     @extend .read;
+
+                    &:hover{
+                        opacity: 0.5;
+                        fill: pink;
+                    }
                 }
             }
         }
