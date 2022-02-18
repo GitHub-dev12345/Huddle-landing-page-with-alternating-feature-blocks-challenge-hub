@@ -94,6 +94,7 @@ select {
   border-radius: 100px;
   -webkit-box-shadow: 0px 2px 10px lightgray;
           box-shadow: 0px 2px 10px lightgray;
+  cursor: pointer;
 }
 
 .getStarted, body header .about .info a button {
@@ -111,6 +112,7 @@ select {
   border: transparent;
   -webkit-box-shadow: 0px 0px 20px  lightgray;
           box-shadow: 0px 0px 20px  lightgray;
+  cursor: pointer;
 }
 
 .read, body main #community a button {
@@ -128,6 +130,7 @@ select {
   border: transparent;
   -webkit-box-shadow: 0px 0px 20px  lightgray;
           box-shadow: 0px 0px 20px  lightgray;
+  cursor: pointer;
 }
 
 body {
@@ -184,6 +187,10 @@ body header .head {
           align-items: center;
 }
 
+body header .head a:hover {
+  opacity: 0.5;
+}
+
 body header .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,6 +222,10 @@ body header .about .info p {
   font-size: 19px;
   font-family: "Open Sans", sans-serif;
   margin: 0px 0px 10px 0px;
+}
+
+body header .about .info a:hover {
+  opacity: 0.5;
 }
 
 body header .about .companyLogo {
@@ -381,6 +392,11 @@ body main #community h3 {
 
 body main #community a {
   margin: 35px 0px 0px 0px;
+}
+
+body main #community a:hover {
+  opacity: 0.5;
+  fill: pink;
 }
 
 body footer {
@@ -564,6 +580,12 @@ body footer .contact #links .link-1 a {
   text-decoration: none;
   font-size: 18px;
   color: #ebfbff;
+  cursor: pointer;
+}
+
+body footer .contact #links .link-1 a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
 
 body footer .contact #social {
@@ -585,12 +607,19 @@ body footer .contact #social {
 
 body footer .contact #social a {
   padding: 5px;
+  cursor: pointer;
 }
 
 body footer .contact #social a img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
   width: 30px;
+}
+
+body footer .contact #social a img:hover {
+  opacity: 0.5;
+  -webkit-filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+          filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 
 body footer #copyright {

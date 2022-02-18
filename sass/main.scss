@@ -25,6 +25,9 @@ body {
             padding: 50px 80px 20px 80px;  
             @include flex-box(row, space-between, center);
             a{
+                &:hover{
+                    opacity: 0.5;
+                }
                 button{
                     @extend .try;
                 }
@@ -47,6 +50,9 @@ body {
                     margin: 0px 0px 10px 0px;
                 }
                 a{
+                    &:hover{
+                        opacity: 0.5;
+                    }
                     button{
                         @extend .getStarted;
                     }
@@ -137,6 +143,12 @@ body {
             }
             a{
                 margin: 35px 0px 0px 0px;
+
+                &:hover{
+                    opacity: 0.5;
+                    fill: pink;
+                }
+
                 button{
                     @extend .read;
                 }
@@ -213,7 +225,13 @@ body {
                         font-family: $main-font-family;
                         text-decoration: none;
                         font-size: 18px;
-                        color: $head-bg-color; 
+                        color: $head-bg-color;
+                        cursor: pointer;
+
+                        &:hover{
+                            text-decoration: underline;
+                            opacity: 0.8;
+                        }
                     }
                 }
             }
@@ -222,9 +240,16 @@ body {
                 margin: -70px 140px 0px 0px;
                 a{
                     padding: 5px;
+                    cursor: pointer;
+
                     img{
                         filter:  brightness(0) invert(1);
                         width: 30px;
+
+                        &:hover{
+                            opacity: 0.5;
+                            filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+                        }
                     }
                 }
             }
