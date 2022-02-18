@@ -84,7 +84,7 @@ select {
   color: black;
   text-align: center;
   font-weight: 600;
-  font-size: 1vw;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
   outline: none;
@@ -103,9 +103,10 @@ select {
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 0.95vw;
+  font-size: 15px;
   text-align: center;
   border-radius: 100px;
+  word-spacing: 2px;
   outline: none;
   border: transparent;
   -webkit-box-shadow: 0px 0px 20px  lightgray;
@@ -119,9 +120,10 @@ select {
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 1.35vw;
+  font-size: 18px;
   text-align: center;
   border-radius: 100px;
+  word-spacing: 2px;
   outline: none;
   border: transparent;
   -webkit-box-shadow: 0px 0px 20px  lightgray;
@@ -161,12 +163,14 @@ body header {
   width: 100%;
   background: url("../images/bg-hero-desktop.svg") no-repeat #ebfbff;
   background-size: 100%;
-  padding: 0px 0px 70px 0px;
+  padding: 0px 0px 80px 0px;
+  /* border: 1px solid black; */
 }
 
 body header .head {
   width: 100%;
   padding: 50px 80px 20px 80px;
+  /* border: 1px solid black; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,6 +187,7 @@ body header .head {
 }
 
 body header .about {
+  /* border: 1px solid black; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,23 +204,25 @@ body header .about {
 }
 
 body header .about .info {
+  /* border: 1px solid black; */
   width: 600px;
   height: auto;
-  margin: 50px 0px 0px 80px;
+  margin: 65px 0px 0px 80px;
 }
 
 body header .about .info h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 2.75vw;
+  font-size: 41px;
 }
 
 body header .about .info p {
-  font-size: 1.25vw;
+  font-size: 19px;
   font-family: "Open Sans", sans-serif;
   margin: 0px 0px 10px 0px;
 }
 
 body header .about .companyLogo {
+  /* border: 1px solid black; */
   width: 725px;
   height: auto;
   margin: 50px 80px 0px 0px;
@@ -245,6 +252,7 @@ body main {
 }
 
 body main section {
+  /* border: 1px solid black; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,7 +266,7 @@ body main section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 97.50%;
+  width: 100%;
   border-radius: 20px;
   padding: 55px 35px 50px 35px;
   border: transparent;
@@ -269,25 +277,27 @@ body main section {
 }
 
 body main section div {
+  /* border: 1px solid black; */
   width: 550px;
   height: auto;
   margin: 50px 0px 50px 90px;
 }
 
 body main section div h3 {
-  font-size: 1.89vw;
+  font-size: 30px;
   font-family: "Poppins", sans-serif;
   opacity: 0.7;
 }
 
 body main section div p {
-  font-size: 1.20vw;
+  font-size: 18px;
   font-family: "Open Sans", sans-serif;
   color: #808d99;
   margin: 15px 0px 0px 0px;
 }
 
 body main section .imgGrow {
+  /* border: 1px solid black; */
   width: 450px;
   height: auto;
   margin: 0px;
@@ -319,6 +329,7 @@ body main #flowing .flow {
 }
 
 body main #flowing .imgFlow {
+  /* border: 1px solid black; */
   margin: 50px 0px 50px 90px;
   width: 450px;
   height: auto;
@@ -346,6 +357,7 @@ body main #users .User {
 }
 
 body main #users .imgUsers {
+  /* border: 1px solid black; */
   width: 450px;
   height: auto;
   margin: 0px;
@@ -374,7 +386,8 @@ body main #community {
 
 body main #community h3 {
   font-family: "Poppins", sans-serif;
-  font-size: 2.2vw;
+  font-size: 32px;
+  text-align: center;
 }
 
 body main #community a {
@@ -421,8 +434,8 @@ body footer .contact {
 }
 
 body footer .contact #details {
-  /* border: 1px solid red; */
   margin: 0px 0px 0px 0px;
+  /* border: 1px solid red; */
 }
 
 body footer .contact #details h1 {
@@ -464,7 +477,7 @@ body footer .contact #details .location a {
 body footer .contact #details .location p {
   font-family: "Open Sans", sans-serif;
   color: #ebfbff;
-  font-size: 1.09vw;
+  font-size: 16.50px;
 }
 
 body footer .contact #details .Contact-us {
@@ -481,6 +494,7 @@ body footer .contact #details .Contact-us {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* border: 1px solid red; */
   padding: 7px;
 }
 
@@ -492,7 +506,7 @@ body footer .contact #details .Contact-us a {
 body footer .contact #details .Contact-us p {
   font-family: "Open Sans", sans-serif;
   color: #ebfbff;
-  font-size: 1.09vw;
+  font-size: 16.50px;
 }
 
 body footer .contact #details .mail {
@@ -520,7 +534,7 @@ body footer .contact #details .mail a {
 body footer .contact #details .mail p {
   font-family: "Open Sans", sans-serif;
   color: #ebfbff;
-  font-size: 1.09vw;
+  font-size: 16.50px;
 }
 
 body footer .contact #links {
@@ -555,7 +569,6 @@ body footer .contact #links .link-1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* border: 1px solid red; */
   margin: -1px 20px 0px 0px;
 }
 
@@ -565,7 +578,7 @@ body footer .contact #links .link-1 a {
   padding: 15px 100px 0px 0px;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
-  font-size: 1.2vw;
+  font-size: 18px;
   color: #ebfbff;
 }
 
@@ -616,9 +629,235 @@ body footer #copyright {
       align-self: flex-end;
   color: #ebfbff;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.85vw;
+  font-size: 13px;
   /* border: 1px solid red; */
   top: -70px;
   right: 80px;
+}
+
+@media all and (max-width: 1170px) {
+  body header .head {
+    padding: 50px 25px 20px 25px;
+  }
+  body header .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header .about .info {
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 65px 80px 0px 80px;
+    padding: 40px;
+  }
+  body header .about .info h2 {
+    text-align: center;
+  }
+  body header .about .info p {
+    text-align: center;
+  }
+  body header .about .info a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  body header .about .companyLogo {
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0px 80px 0px 80px;
+    padding: 40px;
+  }
+  body main {
+    padding: 60px 30px 150px 30px;
+  }
+  body main section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 55px 35px 50px 35px;
+    margin: 40px;
+  }
+  body main section div {
+    width: 100%;
+    margin: 50px 90px 50px 90px;
+  }
+  body main section div h3 {
+    text-align: center;
+  }
+  body main section div p {
+    text-align: center;
+  }
+  body main section .imgGrow {
+    width: 100%;
+    margin: 50px 90px 50px 90px;
+  }
+  body main #flowing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 55px 35px 50px 35px;
+  }
+  body main #flowing .flow {
+    width: 100%;
+    margin: 50px 90px 50px 90px;
+  }
+  body main #flowing .imgFlow {
+    width: 100%;
+    margin: 50px 90px 50px 90px;
+  }
+  body main #users {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 55px 35px 50px 35px;
+  }
+  body main #users .User {
+    width: 100%;
+    margin: 50px 90px 50px 90px;
+  }
+  body main #users .imgUsers {
+    width: 100%;
+    margin: 50px 90px 50px 90px;
+  }
+  body main #community {
+    width: 100%;
+  }
+  body main #community h3 {
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+  body main #community a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+  body footer .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 110px 0px 110px 0px;
+    margin: 85px 0px 0px 0px;
+  }
+  body footer .contact #details {
+    margin: 85px 0px 0px -10px;
+  }
+  body footer .contact #links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0px 0px 0px 20px;
+  }
+  body footer .contact #social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  body footer .contact #social a {
+    position: relative;
+    right: 160px;
+    top: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
