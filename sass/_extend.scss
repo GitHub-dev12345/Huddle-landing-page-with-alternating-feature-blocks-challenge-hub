@@ -3,7 +3,8 @@
     padding: 14px 65px 14px 65px;
     background: white;
     color: black;
-    /* text-align: center; */
+    text-decoration: none;
+    text-align: center;
     font-weight: 600;
     font-size: 16px;
     font-family: $header-font-family;
@@ -20,6 +21,7 @@
     padding: 18px 75px 18px 75px;
     background: $primary-color;
     color: hsl(193, 100%, 96%);
+    text-decoration: none;
     font-weight: 400;
     font-family: $main-font-family;
     font-weight: bold;
