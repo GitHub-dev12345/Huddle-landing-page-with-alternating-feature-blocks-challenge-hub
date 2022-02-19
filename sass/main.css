@@ -422,7 +422,6 @@ body footer {
 }
 
 body footer .contact {
-  font-weight: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,7 +646,6 @@ body footer #copyright {
   color: #ebfbff;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  font-weight: normal;
   top: -70px;
   right: 80px;
 }

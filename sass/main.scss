@@ -168,7 +168,6 @@ body {
         width: 100%;
 
         .contact{
-            font-weight: normal;
             @include flex-box(row, space-between, center);
             width: 100%;
             height: auto;
@@ -269,7 +268,6 @@ body {
             color: $head-bg-color;
             font-family: $main-font-family;
             font-size: 13px;
-            font-weight: normal;
             top: -70px;
             right: 80px;
         }
