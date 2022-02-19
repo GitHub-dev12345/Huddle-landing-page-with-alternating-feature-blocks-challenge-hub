@@ -22,17 +22,19 @@ body {
 
         .head{
             width: 100%; 
-            padding: 50px 80px 20px 80px;  
+            padding: 50px 40px 20px 80px;  
             @include flex-box(row, space-between, center);
             h1{
-                width: 85%;
+                img{
+                    width: 85%;
+                }
             }
             a{
                 button{
                     @extend .try;
 
                     &:hover{
-                        opacity: 0.5;
+                        opacity: 0.6;
                     }
                 }
             }
@@ -253,7 +255,7 @@ body {
 
                         &:hover{
                             opacity: 0.5;
-                            filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+                            filter: #999;
                         }
                     }
                 }
@@ -272,7 +274,7 @@ body {
     }
 }
 // Responsive SASS Code 1270px
-@media all and (max-width: 1270px) {
+@media all and (max-width: 1275px) {
     body {
         header{
             .head{
@@ -478,8 +480,8 @@ body {
             .head{
                 a{
                     button{
-                        padding: 8px 15px 8px 15px;
-                        font-size: 3vw;
+                        padding: 6px 12px 6px 12px;
+                        font-size: 2.5vw;
                     }
                 }
             }

@@ -79,10 +79,10 @@ select {
 }
 
 .try, body header .head a button {
-  padding: 14px 62px 14px 62px;
+  padding: 14px 65px 14px 65px;
   background: white;
   color: black;
-  text-align: center;
+  /* text-align: center; */
   font-weight: 600;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -171,7 +171,7 @@ body header {
 
 body header .head {
   width: 100%;
-  padding: 50px 80px 20px 80px;
+  padding: 50px 40px 20px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,12 +187,12 @@ body header .head {
           align-items: center;
 }
 
-body header .head h1 {
+body header .head h1 img {
   width: 85%;
 }
 
 body header .head a button:hover {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 body header .about {
@@ -622,8 +622,8 @@ body footer .contact #social a img {
 
 body footer .contact #social a img:hover {
   opacity: 0.5;
-  -webkit-filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-          filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+  -webkit-filter: #999;
+          filter: #999;
 }
 
 body footer #copyright {
@@ -650,7 +650,7 @@ body footer #copyright {
   right: 80px;
 }
 
-@media all and (max-width: 1270px) {
+@media all and (max-width: 1275px) {
   body header .head {
     padding: 50px 25px 20px 25px;
   }
@@ -925,8 +925,8 @@ body footer #copyright {
 
 @media all and (max-width: 431px) {
   body header .head a button {
-    padding: 8px 15px 8px 15px;
-    font-size: 3vw;
+    padding: 6px 12px 6px 12px;
+    font-size: 2.5vw;
   }
   body header .about .info {
     margin: 0px 0px 0px 0px;
