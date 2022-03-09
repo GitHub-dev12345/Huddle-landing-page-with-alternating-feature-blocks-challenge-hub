@@ -13,436 +13,447 @@
 // Main SASS Code 
 body {
     @include flex-box(column, center, center);
-    header {
-        @include flex-box(column, center, center);
-        width: 100%;
-        background: url('../images/bg-hero-desktop.svg') no-repeat $head-bg-color;
-        background-size: 100%;
-        padding: 0px 0px 80px 0px;
+}
 
-        .head{
-            width: 100%; 
-            padding: 50px 40px 20px 80px;  
-            @include flex-box(row, space-between, center);
-            h1{
-                img{
-                    width: 85%;
-                }
-            }
-            a{
-                button{
-                    @extend .try;
+/* Header Tag Element CSS Code */
+header {
+    @include flex-box(column, center, center);
+    width: 100%;
+    background: url('../images/bg-hero-desktop.svg') no-repeat $head-bg-color;
+    background-size: 100%;
+    padding: 0px 0px 80px 0px;
+}
 
-                    &:hover{
-                        opacity: 0.6;
-                    }
-                }
-            }
-        }
-        .about{
-            @include flex-box(row, space-around, center);
-            width: 100%;
-            .info{
-                width: 600px;
-                height: auto;
-                margin: 65px 0px 0px 80px;
-                h2{
-                    font-family: $header-font-family;
-                    font-size: 41px;
-                }
-                p{
-                    font-size: 19px;
-                    font-family: $main-font-family;
-                    margin: 0px 0px 10px 0px;
-                }
-                a{
-                    button{
-                        @extend .getStarted;
-
-                        &:hover{
-                            opacity: 0.5;
-                        }
-                    }
-                }
-            }
-            .companyLogo{
-                width: 725px;
-                height: auto;
-                margin: 50px 80px 0px 0px;
-                img{
-                    width: 100%;
-                }
-            }
+.head{
+    width: 100%; 
+    padding: 50px 40px 20px 80px;
+    @include flex-box(row, space-between, center);
+    h1{
+        img{
+            width: 85%;
         }
     }
-    main{
-        @include flex-box(column, center, center);
-        width: 100%;
-        padding: 140px 95px 180px 95px;
-
-        section{
-            @include flex-box(row, space-between, center);
-            width: 100%;
-            border-radius: 15px;
-            padding: 55px 35px 50px 35px;
-            border: transparent;
-            outline: none;
-            margin: 20px;
-            box-shadow: 0px 0px 10px lightgray;
-            div{
-                width: 550px;
-                height: auto;
-                margin: 50px 0px 50px 90px;
-                
-                h3{
-                    font-size: 30px;
-                    font-family: $header-font-family;
-                    opacity: 0.7;
-                }
-                p{
-                    font-size: 18px;
-                    font-family: $main-font-family;
-                    color: $text-color;
-                    margin: 15px 0px 0px 0px;
-                }  
+    a{
+        button{
+            @extend .try;
+            &:hover{
+                opacity: 0.6;
             }
-            .imgGrow{ 
-                width: 450px;
-                height: auto;
-                margin: 0px;
-
-                img{
-                    width: 100%;
-                }
-            }       
-        }
-        #flowing{
-            padding: 15px 0px 15px 35px;
-            @include flex-box(row-reverse, space-between, center);
-            .flow{
-                margin: 0px -10px 0px 0px;
-            }
-            .imgFlow{
-                @include widMar;
-            }
-        }
-        #users{
-            padding: 60px 25px 60px 45px;
-            @include flex-box(row, space-between, center);
-            .User{
-                margin: 50px 0px 50px 90px;
-            }
-            .imgUsers{
-                @include widMar;
-            }
-        }
-        #community{
-            @include flex-box(column, center, center);
-            padding: 70px 70px 50px 70px;
-            margin: 150px 0px -280px 0px;
-            background: white;
-            z-index: 1;
-            width: 63%;
-            h3{
-                font-family: $header-font-family;
-                font-size: 32px;
-                text-align: center;
-            }
-            a{
-                margin: 35px 0px 0px 0px;
-
-                button{
-                    @extend .read;
-
-                    &:hover{
-                        opacity: 0.5;
-                        fill: pink;
-                    }
-                }
-            }
-        }
-    }
-    footer{ 
-        @include flex-box(column, center, center);
-        background: $footer-bg-color;
-        width: 100%;
-
-        .contact{
-            @include flex-box(row, space-between, center);
-            width: 100%;
-            height: auto;
-            padding: 110px 110px 110px 110px;
-            margin: 85px 0px 0px 0px;
-
-            #details{
-                margin: 0px 0px 0px 0px;
-                h1{
-                    padding: 10px;
-                    margin: 0px 0px 0px 20px;
-                    img{
-                        filter:  brightness(0) invert(1);
-                        width: 60%;
-                    }
-                }
-                .location{
-                    @include flex-box(row, center, center);
-                    padding: 15px 15px 0px 15px;
-                    margin: 15px;
-                    a{
-                        padding: 10px;
-                        margin: 0px 15px 0px -10px;
-                        align-self: flex-start;
-                    }
-                    p{
-                        @include para;
-                    }
-                }
-                .Contact-us{
-                    @include flex-box(row,flex-start,center);
-                    padding: 7px;
-                    
-                    a{
-                        padding: 10px;
-                        margin: 0px 10px 0px 15px;
-                    }
-                    p{
-                        @include para;
-                    }
-                }
-                .mail{
-                    @include flex-box(row, flex-start, center);
-                    padding: 7px;
-                    a{
-                        @include marPad; 
-                    }
-                    p{
-                        @include para;
-                    }
-                }
-            }
-            #links{
-                @include flex-box(row, center, center);
-                margin: 0px 0px 0px 100px;
-                .link-1{
-                    @include flex-box(column, center, center);
-                    margin: -1px 20px 0px 0px;
-                    a{
-                        width: 100%;
-                        padding: 15px 100px 0px 0px;
-                        font-family: $main-font-family;
-                        text-decoration: none;
-                        font-size: 18px;
-                        color: $head-bg-color;
-                        cursor: pointer;
-
-                        &:hover{
-                            text-decoration: underline;
-                            opacity: 0.8;
-                        }
-                    }
-                }
-            }
-            #social{
-                @include flex-box(row, center,center);
-                margin: -70px 140px 0px 0px;
-                a{
-                    padding: 5px;
-                    cursor: pointer;
-
-                    img{
-                        filter:  brightness(0) invert(1);
-                        width: 30px;
-
-                        &:hover{
-                            opacity: 0.5;
-                            filter: #999;
-                        }
-                    }
-                }
-            }
-        }
-        #copyright{
-            position: relative;
-            @include flex-box(row, flex-end, center);
-            align-self: flex-end;
-            color: $head-bg-color;
-            font-family: $main-font-family;
-            font-size: 13px;
-            top: -70px;
-            right: 80px;
         }
     }
 }
+
+.about{
+    @include flex-box(row, space-around, center);
+    width: 100%;
+}
+            
+.info{
+    width: 600px;
+    height: auto;
+    margin: 65px 0px 0px 80px;
+    h2{
+        font-family: $header-font-family;
+        font-size: 41px;
+    }
+    p{
+        font-size: 19px;
+        font-family: $main-font-family;
+        margin: 0px 0px 10px 0px;
+    }
+    a{
+        button{
+            @extend .getStarted;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.companyLogo{
+    width: 725px;
+    height: auto;
+    margin: 50px 80px 0px 0px;
+    img{
+        width: 100%;
+    }
+}
+
+
+main{
+    @include flex-box(column, center, center);
+    width: 100%;
+    padding: 140px 95px 180px 95px;
+    section{
+        @include flex-box(row, space-between, center);
+        width: 100%;
+        border-radius: 15px;
+        padding: 55px 35px 50px 35px;
+        border: transparent;
+        outline: none;
+        margin: 20px;
+        box-shadow: 0px 0px 10px lightgray;
+        div{
+            width: 550px;
+            height: auto;
+            margin: 50px 0px 50px 90px;
+            h3{
+                font-size: 30px;
+                font-family: $header-font-family;
+                opacity: 0.7;
+            }
+            p{
+                font-size: 18px;
+                font-family: $main-font-family;
+                color: $text-color;
+                margin: 15px 0px 0px 0px;
+            }
+        }
+    }
+}
+
+.imgGrow{ 
+    width: 450px;
+    height: auto;
+    margin: 0px;
+    img{
+        width: 100%;
+    }
+}       
+
+#flowing{
+    padding: 15px 0px 15px 35px;
+    @include flex-box(row-reverse, space-between, center)
+}
+
+.flow{
+    margin: 0px -10px 0px 0px;
+}
+
+.imgFlow{
+    @include widMar;
+}
+
+#users{
+    padding: 60px 25px 60px 45px;
+    @include flex-box(row, space-between, center);
+}
+
+.User{
+    margin: 50px 0px 50px 90px;
+}
+
+.imgUsers{
+    @include widMar;
+}
+
+#community{
+    @include flex-box(column, center, center);
+    padding: 70px 70px 50px 70px;
+    margin: 150px 0px -280px 0px;
+    background: white;
+    z-index: 1;
+    width: 63%;
+    h3{
+        font-family: $header-font-family;
+        font-size: 32px;
+        text-align: center;
+    }
+    a{
+        margin: 35px 0px 0px 0px;
+        button{
+            @extend .read;
+            &:hover{
+                opacity: 0.5;
+                fill: pink;
+            }
+        }
+    }
+}
+
+footer{ 
+    @include flex-box(column, center, center);
+    background: $footer-bg-color;
+    width: 100%;
+}
+
+.contact{
+    @include flex-box(row, space-between, center);
+    width: 100%;
+    height: auto;
+    padding: 110px 110px 110px 110px;
+    margin: 85px 0px 0px 0px;
+}
+
+#details{
+    margin: 0px 0px 0px 0px;
+    h1{
+        padding: 10px;
+        margin: 0px 0px 0px 20px;
+        img{
+            filter:  brightness(0) invert(1);
+            width: 60%;
+        }
+    }
+}
+
+.location{
+    @include flex-box(row, center, center);
+    padding: 15px 15px 0px 15px;
+    margin: 15px;
+    a{
+        padding: 10px;
+        margin: 0px 15px 0px -10px;
+        align-self: flex-start;
+    }
+    p{
+        @include para;
+    }
+}
+        
+.Contact-us{
+    @include flex-box(row,flex-start,center);
+    padding: 7px;
+    a{
+        padding: 10px;
+        margin: 0px 10px 0px 15px;
+    }
+    p{
+        @include para;
+    }
+}
+
+.mail{
+    @include flex-box(row, flex-start, center);
+    padding: 7px;
+    a{
+        @include marPad; 
+    }
+    p{
+        @include para;
+    }
+}
+
+#links{
+    @include flex-box(row, center, center);
+    margin: 0px 0px 0px 100px;
+}
+
+.link-1{
+    @include flex-box(column, center, center);
+    margin: -1px 20px 0px 0px;
+    a{
+        width: 100%;
+        padding: 15px 100px 0px 0px;
+        font-family: $main-font-family;
+        text-decoration: none;
+        font-size: 18px;
+        color: $head-bg-color;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+    }
+}
+
+#social{
+    @include flex-box(row, center,center);
+    margin: -70px 140px 0px 0px;
+    a{
+        padding: 5px;
+        cursor: pointer;
+        img{
+            filter:  brightness(0) invert(1);
+            width: 30px;
+            &:hover{
+                opacity: 0.5;
+                filter: #999;
+            }
+        }
+    }
+}
+
+#copyright{
+    position: relative;
+    @include flex-box(row, flex-end, center);
+    align-self: flex-end;
+    color: $head-bg-color;
+    font-family: $main-font-family;
+    font-size: 13px;
+    top: -70px;
+    right: 80px;
+}
+
+
 // Responsive SASS Code 1270px
 @media all and (max-width: 1275px) {
-    body {
-        header{
-            .head{
-                padding: 50px 25px 20px 25px;
-            }
-            .about{
-                @include flex-box(column, center, center);
-                .info{
-                    width: 100%;
-                    align-self: center;
-                    margin: 65px 80px 0px 80px;
-                    padding: 40px;
-                    h2{
-                        text-align: center;
-                    }
-                    p{
-                        text-align: center;
-                    }
-                    a{
-                        @include flex-box(column, center, center);
-                        text-decoration: none;  
-                    }
-                }
-                .companyLogo{
-                    width: 100%;
-                    align-self: center;
-                    margin: 0px 80px 0px 80px;
-                    padding: 40px;
-                }
-            }
+    .head{
+        padding: 50px 25px 20px 25px;
+    }
+    
+    .about{
+        @include flex-box(column, center, center);
+    }
+    
+    .info{
+        width: 100%;
+        align-self: center;
+        margin: 65px 80px 0px 80px;
+        padding: 40px;
+        h2{
+            text-align: center;
         }
-        main{
-            padding: 60px 30px 150px 30px;
-            section{
-                @include sectionCode;
-                margin: 40px;
-                div{
-                    @include widMar2;
-                    h3{
-                        text-align: center;
-                    }
-                    p{
-                        text-align: center;
-                    }
-                }
-                .imgGrow{
-                    @include widMar2;
-                }
-            }
-            #flowing{
-                @include sectionCode;
-                .flow{
-                    @include widMar2;
-                }
-                .imgFlow{
-                    @include widMar2;
-                }
-            }
-            #users{
-                @include sectionCode;
-                .User{
-                    @include widMar2;
-                }
-                .imgUsers{
-                    @include widMar2;
-                }
-            }
-            #community{
-                width: 100%;
+        p{
+            text-align: center;
+        }
+        a{
+            @include flex-box(column, center, center);
+            text-decoration: none;  
+        }
+    }
+    .companyLogo{
+        width: 100%;
+        align-self: center;
+        margin: 0px 80px 0px 80px;
+        padding: 40px;
+    }
+    
+    main{
+        padding: 60px 30px 150px 30px;
+        section{
+            @include sectionCode;
+            margin: 40px;
+            div{
+                @include widMar2;
                 h3{
-                    width: 100%;
+                    text-align: center;
                 }
-                a{
-                    @include flex-box(column, center, center);
-                    text-decoration: none;
-                    width: 100%;
+                p{
+                    text-align: center;
                 }
-            }
-        }
-        footer{
-            .contact{
-                @include flex-box(column, flex-start, flex-start);
-                align-self: flex-start;
-                padding: 110px 0px 110px 0px;
-                margin: 85px 0px 0px 0px;
-                #details{
-                    margin: 85px 0px 0px -10px;
-                    h1{
-                    }
-                    .location{
-                    }
-                    .Contact-us{
-                    }
-                    .mail{
-                    }
-                }
-                #links{
-                    @include flex-box(column, flex-start, flex-start);
-                    margin: 0px 0px 0px 20px;
-                    .link-1{
-                    }
-                }
-                #social{
-                    @include flex-box(row,flex-end, flex-end);
-                    width: 100%;
-                    margin: 40px 0px 0px 0px;
-                    a{
-                        position: relative;
-                        right: 140px;
-                        top: 25px;
-                    }
-                }
-            }
-            #copyright{
-                margin: 0px -30px 0px 0px;   
             }
         }
     }
-}
+    .imgGrow{
+        @include widMar2;
+    }
+    
+    #flowing{
+        @include sectionCode;
+    }
+    
+    .flow{
+        @include widMar2;
+    }
+    
+    .imgFlow{
+        @include widMar2;
+    }
+    
+    #users{
+        @include sectionCode;
+    }
+    
+    .User{
+        @include widMar2;
+    }
+    
+    .imgUsers{
+        @include widMar2;
+    }
+    
+    #community{
+        width: 100%;
+        h3{
+            width: 100%;
+        }
+        a{
+            @include flex-box(column, center, center);
+            text-decoration: none;
+            width: 100%;
+        }
+    }
+    
+    .contact{
+        @include flex-box(column, flex-start, flex-start);
+        align-self: flex-start;
+        padding: 110px 0px 110px 0px;
+        margin: 85px 0px 0px 0px;
+    }
+    
+    #details{
+        margin: 85px 0px 0px -10px;
+    }
 
+    #links{
+        @include flex-box(column, flex-start, flex-start);
+        margin: 0px 0px 0px 20px;
+    }
+    
+    #social{
+        @include flex-box(row,flex-end, flex-end);
+        width: 100%;
+        margin: 40px 0px 0px 0px;
+        a{
+            position: relative;
+            right: 140px;
+            top: 25px;
+        }
+    }
+    
+    #copyright{
+        margin: 0px -30px 0px 0px;   
+    }
+}
 // Responsive SASS Code 625px
 @media all and (max-width: 625px) {
-    body{
-        header{
-            background: url(../images/bg-hero-mobile.svg) no-repeat $head-bg-color;
-            background-size: 100%;
-            padding-bottom: 0px;
-            .head{
-                padding-top: 30px;
-                h1{
-                    img{
-                        width: 50%;
-                    }
-                }
-                a{
-                    button{
-                        padding: 5px 30px 5px 30px;
-                    }
-                }
-            }
-            .about{
-                .info{
-                    h2{
-                        font-size: 7vw;
-                    }
-                    p{
-                        font-size: 4.1vw;
-                        br{
-                            display: none;
-                        }   
-                    }
-                    a{
-                        button{
-                            font-size: 3.7vw;
-                        }
-                    }
-                }
+    header{
+        background: url(../images/bg-hero-mobile.svg) no-repeat $head-bg-color;
+        background-size: 100%;
+        padding-bottom: 0px;
+    }
+    .head{
+        padding-top: 30px;
+        h1{
+            img{
+                width: 50%;
             }
         }
-        main{
-            section{
-                div{
-                    margin: 0px 90px 0px 90px;
-                }
-                p{
-                    br{
-                        display: none;
-                    }
+        a{
+            button{
+                padding: 5px 30px 5px 30px;
+            }
+        }
+    }
+    
+    .info{
+        h2{
+            font-size: 7vw;
+        }
+
+        p{
+            font-size: 4.1vw;
+            br{
+                display: none;
+            }   
+        }
+        a{
+            button{
+                font-size: 3.7vw;
+            }
+        }
+    }
+    
+    main{
+        section{
+            div{
+                margin: 0px 90px 0px 90px;
+            }
+            p{
+                br{
+                    display: none;
                 }
             }
         }
@@ -451,23 +462,15 @@ body {
 
 // Responsive SASS Code 600px
 @media all and (max-width: 600px) {
-    body {
-        header{
+    #community{
+        h3{
+            width: 130%;
+            font-size: 4.7vw;
         }
-        main{
-            section{
-            }
-            #community{
-                h3{
-                    width: 130%;
-                    font-size: 4.7vw;
-                }
-                a{
-                    button{
-                        padding: 20px 70px 20px 70px;       
-                        font-size: 2.8vw;
-                    }
-                }
+        a{
+            button{
+                padding: 20px 70px 20px 70px;       
+                font-size: 2.8vw;
             }
         }
     }
@@ -475,105 +478,104 @@ body {
 
 // Finally Responsive SASS Code ( 375px )
 @media all and (max-width: 431px) {
-    body{
-        header{
-            .head{
-                a{
-                    button{
-                        padding: 6px 12px 6px 12px;
-                        font-size: 2.5vw;
-                    }
-                }
+    .head{
+        a{
+            button{
+                padding: 6px 12px 6px 12px;
+                font-size: 2.5vw;
             }
-            .about{
-                .info{
-                    margin: 0px 0px 0px 0px;
-                    a{
-                        button{
-                            font-size: 3.5vw;
-                            padding: 14px 60px 14px 60px;
-                        }
-                    }
-                }
-            }
-            .companyLogo{
-                img{
-                    margin: -35px 0px 0px 0px;
-                }
-            }
-            
         }
-        main{
-            padding: 20px 25px 20px 25px;
-            section{
-                padding: 0px 35px 25px 35px;
-                margin: 20px;
-                div{
-                    h3{
-                        font-size: 5vw;
-                    }
-                    P{
-                        font-size: 3.7vw;
-                    }
-                }
+    }
+    
+    .info{
+        margin: 0px 0px 0px 0px;
+        a{
+            button{
+                font-size: 3.5vw;
+                padding: 14px 60px 14px 60px;
             }
-            #flowing{
-                padding: 0px 35px 40px 35px;
-                .flow{
-                    margin: 0px 90px 0px 90px;
-                    h3{
-                        font-size: 5vw;
-                    }
-                    P{
-                        font-size: 3.7vw;
-                    }       
-                }
-            }
-            #users{
-                padding: 0px 35px 25px 35px;
-                .User{
-                    margin: 0px 90px 0px 90px;
-                    h3{
-                        font-size: 5vw;
-                    }
-                    P{
-                        font-size: 3.9vw;
-                    }
-                }
-            }
-            #community{
-                padding: 30px 70px 30px 70px;
-                margin: 80px 0px -80px 0px;
+        }
+    }
+    .companyLogo{
+        img{
+            margin: -35px 0px 0px 0px;
+        }
+    }
+    
+    main{
+        padding: 20px 25px 20px 25px;
+        section{
+            padding: 0px 35px 25px 35px;
+            margin: 20px;
+            div{
                 h3{
-                    width: 170%;
-                    font-size: 4.7vw;
+                    font-size: 5vw;
                 }
-                a{
-                    margin: 17px 0px 0px 0px;
-                    button{
-                        font-size: 2.61vw;
-                        padding: 15px 40px 15px 40px;
-                    }
+                P{
+                    font-size: 3.7vw;
                 }
             }
         }
-        footer{
-            .contact{
-                margin: -80px 0px 0px 0px;
-                #details{
-                    .location{
-                        a{
-                            img{
-                                width: 50px;
-                            }
-                        }
-                        p{
-                            br{
-                                display: none;
-                            }
-                        }
-                    }
-                }
+    }
+    
+    #flowing{
+        padding: 0px 35px 40px 35px;
+    }
+    
+    .flow{
+        margin: 0px 90px 0px 90px;
+        h3{
+            font-size: 5vw;
+        }
+        P{
+            font-size: 3.7vw;
+        }       
+    }
+    
+    #users{
+        padding: 0px 35px 25px 35px;
+    }
+    
+    .User{
+        margin: 0px 90px 0px 90px;
+        h3{
+            font-size: 5vw;
+        }
+        P{
+            font-size: 3.9vw;
+        }
+    }
+    
+    #community{
+        padding: 30px 70px 30px 70px;
+        margin: 80px 0px -80px 0px;
+        h3{
+            width: 170%;
+            font-size: 4.7vw;
+        }
+        a{
+            margin: 17px 0px 0px 0px;
+            button{
+                font-size: 2.61vw;
+                padding: 15px 40px 15px 40px;
+            }
+        }
+    }
+    
+    .contact{
+        margin: -80px 0px 0px 0px;
+    }
+    
+    .location{
+        a{
+            img{
+                width: 50px;
+            }
+        }
+        
+        p{
+            br{
+                display: none;
             }
         }
     }
