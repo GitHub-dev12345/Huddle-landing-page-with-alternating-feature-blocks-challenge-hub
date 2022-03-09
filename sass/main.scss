@@ -11,6 +11,7 @@
 @import "_extend";
 
 // Main SASS Code 
+/* Body CSS Code */
 body {
     @include flex-box(column, center, center);
 }
@@ -24,6 +25,7 @@ header {
     padding: 0px 0px 80px 0px;
 }
 
+/* In Header Tag, Class head div Container CSS Code */
 .head{
     width: 100%; 
     padding: 50px 40px 20px 80px;
@@ -43,11 +45,13 @@ header {
     }
 }
 
+/* In Header Tag, Class about div Container CSS Code */
 .about{
     @include flex-box(row, space-around, center);
     width: 100%;
 }
-            
+
+/* In about div container, Class info div Container CSS Code */
 .info{
     width: 600px;
     height: auto;
@@ -71,6 +75,7 @@ header {
     }
 }
 
+/* In about div container, Class companyLogo div Container CSS Code */
 .companyLogo{
     width: 725px;
     height: auto;
@@ -80,7 +85,7 @@ header {
     }
 }
 
-
+/* Main Container CSS Code */
 main{
     @include flex-box(column, center, center);
     width: 100%;
@@ -113,6 +118,7 @@ main{
     }
 }
 
+/* In Main Container, class ingGrow Container CSS Code */
 .imgGrow{ 
     width: 450px;
     height: auto;
@@ -122,32 +128,39 @@ main{
     }
 }       
 
+/* In main Container, ID flowing section Contianer CSS Code */
 #flowing{
     padding: 15px 0px 15px 35px;
     @include flex-box(row-reverse, space-between, center)
 }
 
+/* In Flowing Container, class flow contianer CSS Code */
 .flow{
     margin: 0px -10px 0px 0px;
 }
 
+/* In Flowing Container, class imgFlow contianer CSS Code */
 .imgFlow{
     @include widMar;
 }
 
+/* In main Container, ID users section Contianer CSS Code */
 #users{
     padding: 60px 25px 60px 45px;
     @include flex-box(row, space-between, center);
 }
 
+/* In users container, class user container css code */
 .User{
     margin: 50px 0px 50px 90px;
 }
 
+/* In users container, class imgUsers container css code */
 .imgUsers{
     @include widMar;
 }
 
+/* In main Container, ID community section Contianer CSS Code */
 #community{
     @include flex-box(column, center, center);
     padding: 70px 70px 50px 70px;
@@ -172,12 +185,14 @@ main{
     }
 }
 
+/* Footer Tag Element CSS Code */
 footer{ 
     @include flex-box(column, center, center);
     background: $footer-bg-color;
     width: 100%;
 }
 
+/* In Footer tag, class contact section container css code */
 .contact{
     @include flex-box(row, space-between, center);
     width: 100%;
@@ -186,6 +201,7 @@ footer{
     margin: 85px 0px 0px 0px;
 }
 
+/* In class contact section container, ID Details container css Code */
 #details{
     margin: 0px 0px 0px 0px;
     h1{
@@ -198,6 +214,7 @@ footer{
     }
 }
 
+/* In Details container, class location container css code */ 
 .location{
     @include flex-box(row, center, center);
     padding: 15px 15px 0px 15px;
@@ -211,7 +228,8 @@ footer{
         @include para;
     }
 }
-        
+
+/* In Details container, class contact-us container css code */
 .Contact-us{
     @include flex-box(row,flex-start,center);
     padding: 7px;
@@ -224,6 +242,7 @@ footer{
     }
 }
 
+/* In Details container, class mail container css code */
 .mail{
     @include flex-box(row, flex-start, center);
     padding: 7px;
@@ -235,11 +254,13 @@ footer{
     }
 }
 
+/* In class contact section container, ID links container css Code */
 #links{
     @include flex-box(row, center, center);
     margin: 0px 0px 0px 100px;
 }
 
+/* In Links container, class link-1 container css code */
 .link-1{
     @include flex-box(column, center, center);
     margin: -1px 20px 0px 0px;
@@ -258,6 +279,7 @@ footer{
     }
 }
 
+/* In class contact section container, ID social container css Code */
 #social{
     @include flex-box(row, center,center);
     margin: -70px 140px 0px 0px;
@@ -275,6 +297,7 @@ footer{
     }
 }
 
+/* In Footer tag, ID copyright section container css code */
 #copyright{
     position: relative;
     @include flex-box(row, flex-end, center);
@@ -285,7 +308,6 @@ footer{
     top: -70px;
     right: 80px;
 }
-
 
 // Responsive SASS Code 1270px
 @media all and (max-width: 1275px) {
@@ -407,6 +429,7 @@ footer{
         margin: 0px -30px 0px 0px;   
     }
 }
+
 // Responsive SASS Code 625px
 @media all and (max-width: 625px) {
     header{

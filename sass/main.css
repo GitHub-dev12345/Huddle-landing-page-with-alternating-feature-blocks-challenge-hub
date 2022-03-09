@@ -78,7 +78,7 @@ select {
   }
 }
 
-.try, body header .head a button {
+.try, .head a button {
   padding: 14px 65px 14px 65px;
   background: white;
   color: black;
@@ -98,7 +98,7 @@ select {
   cursor: pointer;
 }
 
-.getStarted, body header .about .info a button {
+.getStarted, .info a button {
   padding: 18px 75px 18px 75px;
   background: #ff52bf;
   color: #ebfbff;
@@ -117,7 +117,7 @@ select {
   cursor: pointer;
 }
 
-.read, body main #community a button {
+.read, #community a button {
   padding: 26px 102px 26px 102px;
   background: #ff52bf;
   color: white;
@@ -135,6 +135,7 @@ select {
   cursor: pointer;
 }
 
+/* Body CSS Code */
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,7 +152,8 @@ body {
           align-items: center;
 }
 
-body header {
+/* Header Tag Element CSS Code */
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +173,8 @@ body header {
   padding: 0px 0px 80px 0px;
 }
 
-body header .head {
+/* In Header Tag, Class head div Container CSS Code */
+.head {
   width: 100%;
   padding: 50px 40px 20px 80px;
   display: -webkit-box;
@@ -189,15 +192,16 @@ body header .head {
           align-items: center;
 }
 
-body header .head h1 img {
+.head h1 img {
   width: 85%;
 }
 
-body header .head a button:hover {
+.head a button:hover {
   opacity: 0.6;
 }
 
-body header .about {
+/* In Header Tag, Class about div Container CSS Code */
+.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,38 +217,41 @@ body header .about {
   width: 100%;
 }
 
-body header .about .info {
+/* In about div container, Class info div Container CSS Code */
+.info {
   width: 600px;
   height: auto;
   margin: 65px 0px 0px 80px;
 }
 
-body header .about .info h2 {
+.info h2 {
   font-family: "Poppins", sans-serif;
   font-size: 41px;
 }
 
-body header .about .info p {
+.info p {
   font-size: 19px;
   font-family: "Open Sans", sans-serif;
   margin: 0px 0px 10px 0px;
 }
 
-body header .about .info a button:hover {
+.info a button:hover {
   opacity: 0.5;
 }
 
-body header .about .companyLogo {
+/* In about div container, Class companyLogo div Container CSS Code */
+.companyLogo {
   width: 725px;
   height: auto;
   margin: 50px 80px 0px 0px;
 }
 
-body header .about .companyLogo img {
+.companyLogo img {
   width: 100%;
 }
 
-body main {
+/* Main Container CSS Code */
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,7 +269,7 @@ body main {
   padding: 140px 95px 180px 95px;
 }
 
-body main section {
+main section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,36 +293,38 @@ body main section {
           box-shadow: 0px 0px 10px lightgray;
 }
 
-body main section div {
+main section div {
   width: 550px;
   height: auto;
   margin: 50px 0px 50px 90px;
 }
 
-body main section div h3 {
+main section div h3 {
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   opacity: 0.7;
 }
 
-body main section div p {
+main section div p {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   color: #808d99;
   margin: 15px 0px 0px 0px;
 }
 
-body main section .imgGrow {
+/* In Main Container, class ingGrow Container CSS Code */
+.imgGrow {
   width: 450px;
   height: auto;
   margin: 0px;
 }
 
-body main section .imgGrow img {
+.imgGrow img {
   width: 100%;
 }
 
-body main #flowing {
+/* In main Container, ID flowing section Contianer CSS Code */
+#flowing {
   padding: 15px 0px 15px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,17 +341,20 @@ body main #flowing {
           align-items: center;
 }
 
-body main #flowing .flow {
+/* In Flowing Container, class flow contianer CSS Code */
+.flow {
   margin: 0px -10px 0px 0px;
 }
 
-body main #flowing .imgFlow {
+/* In Flowing Container, class imgFlow contianer CSS Code */
+.imgFlow {
   margin: 50px 0px 50px 90px;
   width: 450px;
   height: auto;
 }
 
-body main #users {
+/* In main Container, ID users section Contianer CSS Code */
+#users {
   padding: 60px 25px 60px 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,17 +371,20 @@ body main #users {
           align-items: center;
 }
 
-body main #users .User {
+/* In users container, class user container css code */
+.User {
   margin: 50px 0px 50px 90px;
 }
 
-body main #users .imgUsers {
+/* In users container, class imgUsers container css code */
+.imgUsers {
   margin: 50px 0px 50px 90px;
   width: 450px;
   height: auto;
 }
 
-body main #community {
+/* In main Container, ID community section Contianer CSS Code */
+#community {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,22 +405,23 @@ body main #community {
   width: 63%;
 }
 
-body main #community h3 {
+#community h3 {
   font-family: "Poppins", sans-serif;
   font-size: 32px;
   text-align: center;
 }
 
-body main #community a {
+#community a {
   margin: 35px 0px 0px 0px;
 }
 
-body main #community a button:hover {
+#community a button:hover {
   opacity: 0.5;
   fill: pink;
 }
 
-body footer {
+/* Footer Tag Element CSS Code */
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,7 +439,8 @@ body footer {
   width: 100%;
 }
 
-body footer .contact {
+/* In Footer tag, class contact section container css code */
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,22 +460,24 @@ body footer .contact {
   margin: 85px 0px 0px 0px;
 }
 
-body footer .contact #details {
+/* In class contact section container, ID Details container css Code */
+#details {
   margin: 0px 0px 0px 0px;
 }
 
-body footer .contact #details h1 {
+#details h1 {
   padding: 10px;
   margin: 0px 0px 0px 20px;
 }
 
-body footer .contact #details h1 img {
+#details h1 img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
   width: 60%;
 }
 
-body footer .contact #details .location {
+/* In Details container, class location container css code */
+.location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,20 +495,21 @@ body footer .contact #details .location {
   margin: 15px;
 }
 
-body footer .contact #details .location a {
+.location a {
   padding: 10px;
   margin: 0px 15px 0px -10px;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
-body footer .contact #details .location p {
+.location p {
   font-family: "Open Sans", sans-serif;
   color: #ebfbff;
   font-size: 16.50px;
 }
 
-body footer .contact #details .Contact-us {
+/* In Details container, class contact-us container css code */
+.Contact-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,18 +526,19 @@ body footer .contact #details .Contact-us {
   padding: 7px;
 }
 
-body footer .contact #details .Contact-us a {
+.Contact-us a {
   padding: 10px;
   margin: 0px 10px 0px 15px;
 }
 
-body footer .contact #details .Contact-us p {
+.Contact-us p {
   font-family: "Open Sans", sans-serif;
   color: #ebfbff;
   font-size: 16.50px;
 }
 
-body footer .contact #details .mail {
+/* In Details container, class mail container css code */
+.mail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,18 +555,19 @@ body footer .contact #details .mail {
   padding: 7px;
 }
 
-body footer .contact #details .mail a {
+.mail a {
   padding: 10px;
   margin: 0px 10px 0px 15px;
 }
 
-body footer .contact #details .mail p {
+.mail p {
   font-family: "Open Sans", sans-serif;
   color: #ebfbff;
   font-size: 16.50px;
 }
 
-body footer .contact #links {
+/* In class contact section container, ID links container css Code */
+#links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,7 +584,8 @@ body footer .contact #links {
   margin: 0px 0px 0px 100px;
 }
 
-body footer .contact #links .link-1 {
+/* In Links container, class link-1 container css code */
+.link-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,7 +602,7 @@ body footer .contact #links .link-1 {
   margin: -1px 20px 0px 0px;
 }
 
-body footer .contact #links .link-1 a {
+.link-1 a {
   width: 100%;
   padding: 15px 100px 0px 0px;
   font-family: "Open Sans", sans-serif;
@@ -589,12 +612,13 @@ body footer .contact #links .link-1 a {
   cursor: pointer;
 }
 
-body footer .contact #links .link-1 a:hover {
+.link-1 a:hover {
   text-decoration: underline;
   opacity: 0.8;
 }
 
-body footer .contact #social {
+/* In class contact section container, ID social container css Code */
+#social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,24 +635,25 @@ body footer .contact #social {
   margin: -70px 140px 0px 0px;
 }
 
-body footer .contact #social a {
+#social a {
   padding: 5px;
   cursor: pointer;
 }
 
-body footer .contact #social a img {
+#social a img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
   width: 30px;
 }
 
-body footer .contact #social a img:hover {
+#social a img:hover {
   opacity: 0.5;
   -webkit-filter: #999;
           filter: #999;
 }
 
-body footer #copyright {
+/* In Footer tag, ID copyright section container css code */
+#copyright {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -653,10 +678,10 @@ body footer #copyright {
 }
 
 @media all and (max-width: 1275px) {
-  body header .head {
+  .head {
     padding: 50px 25px 20px 25px;
   }
-  body header .about {
+  .about {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -671,7 +696,7 @@ body footer #copyright {
         -ms-flex-align: center;
             align-items: center;
   }
-  body header .about .info {
+  .info {
     width: 100%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -679,13 +704,13 @@ body footer #copyright {
     margin: 65px 80px 0px 80px;
     padding: 40px;
   }
-  body header .about .info h2 {
+  .info h2 {
     text-align: center;
   }
-  body header .about .info p {
+  .info p {
     text-align: center;
   }
-  body header .about .info a {
+  .info a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -701,7 +726,7 @@ body footer #copyright {
             align-items: center;
     text-decoration: none;
   }
-  body header .about .companyLogo {
+  .companyLogo {
     width: 100%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -709,10 +734,10 @@ body footer #copyright {
     margin: 0px 80px 0px 80px;
     padding: 40px;
   }
-  body main {
+  main {
     padding: 60px 30px 150px 30px;
   }
-  body main section {
+  main section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -729,21 +754,21 @@ body footer #copyright {
     padding: 55px 35px 50px 35px;
     margin: 40px;
   }
-  body main section div {
+  main section div {
     width: 100%;
     margin: 50px 90px 50px 90px;
   }
-  body main section div h3 {
+  main section div h3 {
     text-align: center;
   }
-  body main section div p {
+  main section div p {
     text-align: center;
   }
-  body main section .imgGrow {
+  .imgGrow {
     width: 100%;
     margin: 50px 90px 50px 90px;
   }
-  body main #flowing {
+  #flowing {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -759,15 +784,15 @@ body footer #copyright {
             align-items: center;
     padding: 55px 35px 50px 35px;
   }
-  body main #flowing .flow {
+  .flow {
     width: 100%;
     margin: 50px 90px 50px 90px;
   }
-  body main #flowing .imgFlow {
+  .imgFlow {
     width: 100%;
     margin: 50px 90px 50px 90px;
   }
-  body main #users {
+  #users {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -783,21 +808,21 @@ body footer #copyright {
             align-items: center;
     padding: 55px 35px 50px 35px;
   }
-  body main #users .User {
+  .User {
     width: 100%;
     margin: 50px 90px 50px 90px;
   }
-  body main #users .imgUsers {
+  .imgUsers {
     width: 100%;
     margin: 50px 90px 50px 90px;
   }
-  body main #community {
+  #community {
     width: 100%;
   }
-  body main #community h3 {
+  #community h3 {
     width: 100%;
   }
-  body main #community a {
+  #community a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -814,7 +839,7 @@ body footer #copyright {
     text-decoration: none;
     width: 100%;
   }
-  body footer .contact {
+  .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -833,10 +858,10 @@ body footer #copyright {
     padding: 110px 0px 110px 0px;
     margin: 85px 0px 0px 0px;
   }
-  body footer .contact #details {
+  #details {
     margin: 85px 0px 0px -10px;
   }
-  body footer .contact #links {
+  #links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -852,7 +877,7 @@ body footer #copyright {
             align-items: flex-start;
     margin: 0px 0px 0px 20px;
   }
-  body footer .contact #social {
+  #social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -869,136 +894,136 @@ body footer #copyright {
     width: 100%;
     margin: 40px 0px 0px 0px;
   }
-  body footer .contact #social a {
+  #social a {
     position: relative;
     right: 140px;
     top: 25px;
   }
-  body footer #copyright {
+  #copyright {
     margin: 0px -30px 0px 0px;
   }
 }
 
 @media all and (max-width: 625px) {
-  body header {
+  header {
     background: url(../images/bg-hero-mobile.svg) no-repeat #ebfbff;
     background-size: 100%;
     padding-bottom: 0px;
   }
-  body header .head {
+  .head {
     padding-top: 30px;
   }
-  body header .head h1 img {
+  .head h1 img {
     width: 50%;
   }
-  body header .head a button {
+  .head a button {
     padding: 5px 30px 5px 30px;
   }
-  body header .about .info h2 {
+  .info h2 {
     font-size: 7vw;
   }
-  body header .about .info p {
+  .info p {
     font-size: 4.1vw;
   }
-  body header .about .info p br {
+  .info p br {
     display: none;
   }
-  body header .about .info a button {
+  .info a button {
     font-size: 3.7vw;
   }
-  body main section div {
+  main section div {
     margin: 0px 90px 0px 90px;
   }
-  body main section p br {
+  main section p br {
     display: none;
   }
 }
 
 @media all and (max-width: 600px) {
-  body main #community h3 {
+  #community h3 {
     width: 130%;
     font-size: 4.7vw;
   }
-  body main #community a button {
+  #community a button {
     padding: 20px 70px 20px 70px;
     font-size: 2.8vw;
   }
 }
 
 @media all and (max-width: 431px) {
-  body header .head a button {
+  .head a button {
     padding: 6px 12px 6px 12px;
     font-size: 2.5vw;
   }
-  body header .about .info {
+  .info {
     margin: 0px 0px 0px 0px;
   }
-  body header .about .info a button {
+  .info a button {
     font-size: 3.5vw;
     padding: 14px 60px 14px 60px;
   }
-  body header .companyLogo img {
+  .companyLogo img {
     margin: -35px 0px 0px 0px;
   }
-  body main {
+  main {
     padding: 20px 25px 20px 25px;
   }
-  body main section {
+  main section {
     padding: 0px 35px 25px 35px;
     margin: 20px;
   }
-  body main section div h3 {
+  main section div h3 {
     font-size: 5vw;
   }
-  body main section div P {
+  main section div P {
     font-size: 3.7vw;
   }
-  body main #flowing {
+  #flowing {
     padding: 0px 35px 40px 35px;
   }
-  body main #flowing .flow {
+  .flow {
     margin: 0px 90px 0px 90px;
   }
-  body main #flowing .flow h3 {
+  .flow h3 {
     font-size: 5vw;
   }
-  body main #flowing .flow P {
+  .flow P {
     font-size: 3.7vw;
   }
-  body main #users {
+  #users {
     padding: 0px 35px 25px 35px;
   }
-  body main #users .User {
+  .User {
     margin: 0px 90px 0px 90px;
   }
-  body main #users .User h3 {
+  .User h3 {
     font-size: 5vw;
   }
-  body main #users .User P {
+  .User P {
     font-size: 3.9vw;
   }
-  body main #community {
+  #community {
     padding: 30px 70px 30px 70px;
     margin: 80px 0px -80px 0px;
   }
-  body main #community h3 {
+  #community h3 {
     width: 170%;
     font-size: 4.7vw;
   }
-  body main #community a {
+  #community a {
     margin: 17px 0px 0px 0px;
   }
-  body main #community a button {
+  #community a button {
     font-size: 2.61vw;
     padding: 15px 40px 15px 40px;
   }
-  body footer .contact {
+  .contact {
     margin: -80px 0px 0px 0px;
   }
-  body footer .contact #details .location a img {
+  .location a img {
     width: 50px;
   }
-  body footer .contact #details .location p br {
+  .location p br {
     display: none;
   }
 }
